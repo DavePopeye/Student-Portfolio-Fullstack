@@ -25,8 +25,6 @@ class StudentsCard extends React.Component {
           })}
       </>
     );
-    console.log(this.props.isLoading);
-    console.log(this.props.errMess);
   }
 }
 
