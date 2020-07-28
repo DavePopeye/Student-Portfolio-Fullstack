@@ -1,0 +1,14 @@
+.carouselStyle {
+    margin          : 3%;
+    background-color: black;
+}
+
+.imageStyle {
+    width      : 80%;
+    height     : 100%;
+    margin-left: 10%;
+}
+
+.fontStyle {
+    color: black !important;
+}

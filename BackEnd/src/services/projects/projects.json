@@ -1,1 +1,24 @@
-[{"id":"99tw38xgkbthkh7m","name":"good project","description":"meh","repoURL":"http:/git.com","liveURL":"http:/live.com","studentID":"99tw3algkbtdr8he"},{"id":"1y6q7o8kcfywtol","name":"nice project","description":"nice","repoURL":"http:/git.com","liveURL":"http:/live.com"},{"id":"1y6qip8kcfyxs5m","name":"nice project","description":"nice","repoURL":"http:/git.com","liveURL":"http:/live.com"}]
+[
+  {
+    "id": "99tw38xgkbthkh7m",
+    "name": "good project",
+    "description": "meh",
+    "repoURL": "http:/git.com",
+    "liveURL": "http:/live.com",
+    "studentID": "99tw3algkbtdr8he"
+  },
+  {
+    "id": "1y6q7o8kcfywtol",
+    "name": "nice project",
+    "description": "nice",
+    "repoURL": "http:/git.com",
+    "liveURL": "http:/live.com"
+  },
+  {
+    "id": "1y6qip8kcfyxs5m",
+    "name": "nice project",
+    "description": "nice",
+    "repoURL": "http:/git.com",
+    "liveURL": "http:/live.com"
+  }
+]

@@ -1,10 +1,11 @@
 const express = require("express");
 const ProjectsSchema = require("./schema");
+const StudentSchema = require("../students/schema");
 const projectsRouter = express.Router();
 
 projectsRouter.get("/", async (req, res, next) => {
   try {
-    const projects = await ProjectsSchema.find(req.query);
+    const projects = await ProjectsSchema.find(req.query).populate("student");
     res.send(projects);
   } catch (error) {
     next(error);
@@ -32,6 +33,11 @@ projectsRouter.post("/", async (req, res, next) => {
   try {
     const newProject = new ProjectsSchema(req.body);
     const { _id } = await newProject.save();
+    await StudentSchema.findByIdAndUpdate(req.body.student, {
+      $push: {
+        projects: _id,
+      },
+    });
     res.status(201).send("Done!");
   } catch (error) {
     next(error);

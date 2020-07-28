@@ -11,6 +11,12 @@ const StudentSchema = new Schema({
     type: String,
     required: true,
   },
+  projects: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Projects",
+    },
+  ],
   email: {
     type: String,
     required: true,

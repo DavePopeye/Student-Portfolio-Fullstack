@@ -10,7 +10,7 @@ studentsRouter.get("/", async (req, res, next) => {
 
     res.send({
       students: students,
-      total: total, //numero di documenti / userrs /
+      total: total,
     });
   } catch (error) {
     next(error);
@@ -20,7 +20,7 @@ studentsRouter.get("/", async (req, res, next) => {
 studentsRouter.get("/:id", async (req, res, next) => {
   try {
     const id = req.params.id;
-    const user = await StudentSchema.findById(id);
+    const user = await StudentSchema.findById(id).populate("projects");
     if (user) {
       res.send(user);
     } else {

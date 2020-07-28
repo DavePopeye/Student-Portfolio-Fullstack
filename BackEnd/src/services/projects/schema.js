@@ -20,6 +20,10 @@ const ProjectsSchema = new Schema({
     required: true,
     lowercase: true,
   },
+  student: {
+    type: Schema.Types.ObjectId,
+    ref: "Student",
+  },
 });
 
 ProjectsSchema.post("save", function (error, doc, next) {

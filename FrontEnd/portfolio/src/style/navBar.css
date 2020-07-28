@@ -1,0 +1,9 @@
+.navBarStyle {
+    background-color: white;
+    color           : rgba(0, 0, 0, 0.822) !important;
+    font-weight     : 600;
+}
+
+.brand {
+    width: 70px;
+}
