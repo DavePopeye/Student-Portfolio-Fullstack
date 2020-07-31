@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import StudentsCard from "./components/StudentsCard";
 import Carousel from "./components/Carousel";
-
+import ProjectsCard from "./components/Projects/ProjectsCard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import { Container } from "react-bootstrap";
@@ -41,6 +41,7 @@ class App extends React.Component {
                 />
               )}
             />
+            <Route path="/project" exact component={() => <ProjectsCard />} />
           </Container>
         </Router>
       </>
